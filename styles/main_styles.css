@@ -1243,14 +1243,14 @@ section {
 }
 
 /*********************************
-9. Artist
+9. Album
 *********************************/
 
-.artist {
+.album {
   padding-bottom: 106px;
   background: #000000;
 }
-.artist_content {
+.album_content {
   padding-top: 191px;
 }
 .artist_image {
@@ -1261,7 +1261,7 @@ section {
 .artist_image img {
   max-width: 100%;
 }
-.artist_text {
+.album_text {
   margin-top: 39px;
 }
 .artist_text p:not(:last-child) {
