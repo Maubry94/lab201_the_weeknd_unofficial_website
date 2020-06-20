@@ -45,7 +45,7 @@ $(document).ready(function () {
                       <div class="show_name">
                         <a href="#">${item.val().city}</a>
                       </div>
-                      <div class="show_location">${item.val().country}</div>
+                      <div class="show_location">${item.val().place}</div>
                     </div>
                     <div class="ml-auto">
                       <div class="show_shop trans_200">
@@ -73,7 +73,7 @@ $(document).ready(function () {
                       <div class="show_name">
                         <a href="#">${item.val().city}</a>
                       </div>
-                      <div class="show_location">${item.val().country}</div>
+                      <div class="show_location">${item.val().place}</div>
                     </div>
                     <div class="ml-auto">
                       <div class="show_shop trans_200">
@@ -104,7 +104,7 @@ $(document).ready(function () {
               <div class="show_name">
                 <a href="#">${item.val().city}</a>
               </div>
-              <div class="show_location">${item.val().country}</div>
+              <div class="show_location">${item.val().place}</div>
             </div>
             <div class="ml-auto">
               <div class="show_shop trans_200">
@@ -122,7 +122,7 @@ $(document).ready(function () {
   // Create add-tour-form
   $(".section_title").on("click", ".add-icon", function (e) {
     if (addForm == false) {
-      $("body").append(
+      $(".shows").append(
         `
           <div class="add-tour-form">
             <form>
@@ -138,10 +138,10 @@ $(document).ready(function () {
                 name="add-city"
                 require
               />
-              <p>Pays :</p>
-              <input class="add-country"
+              <p>Lieu :</p>
+              <input class="add-place"
                 type="text"
-                name="add-country"
+                name="add-place"
                 require
               />
               <input type="submit" class="add-tour" value="Ajouter">
@@ -163,7 +163,7 @@ $(document).ready(function () {
 
     const date = $(".add-date").val().trim();
     const city = $(".add-city").val().trim();
-    const country = $(".add-country").val().trim();
+    const place = $(".add-place").val().trim();
 
     const error = [];
 
@@ -183,19 +183,19 @@ $(document).ready(function () {
       $(".add-city").css("border 1px", "black");
     }
 
-    if (country < 1) {
-      $(".add-country").css("border", "1px solid red");
-      $(".add-country").attr("placeholder", "Veuillez remplir ce champ");
-      error.push(country);
+    if (place < 1) {
+      $(".add-place").css("border", "1px solid red");
+      $(".add-place").attr("placeholder", "Veuillez remplir ce champ");
+      error.push(place);
     } else {
-      $(".add-country").css("border 1px", "black");
+      $(".add-place").css("border 1px", "black");
     }
 
     if (error.length === 0) {
       tourRef.push({
         date: date,
         city: city,
-        country: country,
+        place: place,
       });
 
       $(".add-tour-form").remove();
@@ -226,16 +226,16 @@ $(document).ready(function () {
                     required
                   />
                   <p>Ville :</p>
-                  <input class="edit-festival"
+                  <input class="edit-city"
                     type="text"
-                    name="edit-festival"
+                    name="edit-city"
                     value=""
                     required
                   />
-                  <p>Pays :</p>
-                  <input class="edit-location"
+                  <p>Lieu :</p>
+                  <input class="edit-place"
                     type="text"
-                    name="edit-location"
+                    name="edit-place"
                     value=""
                     required
                   />
@@ -259,8 +259,8 @@ $(document).ready(function () {
     e.preventDefault();
 
     const date = $(".edit-date").val().trim();
-    const festival = $(".edit-festival").val().trim();
-    const location = $(".edit-location").val().trim();
+    const city = $(".edit-city").val().trim();
+    const palce = $(".edit-place").val().trim();
 
     const error = [];
 
@@ -272,20 +272,20 @@ $(document).ready(function () {
       $(".edit-date").css("border 1px", "black");
     }
 
-    if (festival < 1) {
-      $(".edit-festival").css("border", "1px solid red");
-      $(".edit-festival").attr("placeholder", "Veuillez remplir ce champ");
-      error.push(festival);
+    if (city < 1) {
+      $(".edit-city").css("border", "1px solid red");
+      $(".edit-city").attr("placeholder", "Veuillez remplir ce champ");
+      error.push(city);
     } else {
-      $(".edit-festival").css("border 1px", "black");
+      $(".edit-city").css("border 1px", "black");
     }
 
-    if (location < 1) {
-      $(".edit-location").css("border", "1px solid red");
-      $(".edit-location").attr("placeholder", "Veuillez remplir ce champ");
-      error.push(location);
+    if (palce < 1) {
+      $(".edit-place").css("border", "1px solid red");
+      $(".edit-place").attr("placeholder", "Veuillez remplir ce champ");
+      error.push(palce);
     } else {
-      $(".edit-location").css("border 1px", "black");
+      $(".edit-place").css("border 1px", "black");
     }
 
     if (error.length === 0) {
@@ -294,8 +294,8 @@ $(document).ready(function () {
         .ref("tour/" + itemKey)
         .update({
           date: date,
-          festival: festival,
-          location: location,
+          city: city,
+          place: palce,
         });
       $(".edit-tour-form").remove();
       $(".container").css("filter", "blur(0px)");

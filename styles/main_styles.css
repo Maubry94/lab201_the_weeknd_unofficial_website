@@ -329,14 +329,12 @@ section {
   left: 51px;
 }
 .logo a {
+  text-transform: uppercase;
   font-family: "Bahnschrift", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 15px;
   color: #ffffff;
-}
-.logo a:hover {
-  /* font-family: "Blacklisted", sans-serif; */
-  font-size: 30px;
-  color: #ffde59;
+  border: 3px solid #ffffff;
 }
 .log_reg {
   position: absolute;
@@ -619,8 +617,40 @@ section {
   padding-right: 52px;
 }
 .home_slider_container {
+  position: relative;
   width: 100%;
   height: 100%;
+}
+.social-ctnr {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  z-index: 1;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-ctnr a {
+  width: 100%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.social-ctnr a:hover {
+  color: #ffde59;
+}
+.social-ctnr .th-shop {
+  height: 75px;
+  background-image: url(../images/XO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-ctnr .th-shop:hover {
+  background-image: url(../images/XO-2.png);
 }
 .home_slider.owl-theme .owl-nav.disabled + .owl-dots {
   position: absolute;
@@ -1204,7 +1234,7 @@ section {
 .show_date {
   width: 130px;
   height: 60px;
-  background: #ffde59;
+  background: rgba(255, 214, 0, 0.8);
   line-height: 60px;
   text-align: center;
   margin-right: 23px;

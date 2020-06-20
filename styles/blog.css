@@ -327,14 +327,12 @@ section {
   left: 51px;
 }
 .logo a {
+  text-transform: uppercase;
   font-family: "Bahnschrift", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 15px;
   color: #ffffff;
-}
-.logo a:hover {
-  /* font-family: "Blacklisted", sans-serif; */
-  font-size: 30px;
-  color: #ffde59;
+  border: 3px solid #ffffff;
 }
 .log_reg {
   position: absolute;

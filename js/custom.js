@@ -10,6 +10,7 @@
 4. Init Home Slider
 5. Init Featured Album Player
 6. InitMagic
+7. Other stuff
 
 
 ******************************/
@@ -288,4 +289,10 @@ $(document).ready(function () {
       });
     }
   }
+
+  /*
+
+  7. Other stuff
+
+  */
 });
