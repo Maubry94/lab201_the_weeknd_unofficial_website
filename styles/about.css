@@ -360,7 +360,7 @@ section {
   color: #ffffff;
 }
 .log_reg ul li a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 .main_nav ul li:not(:last-child) {
   margin-right: 24px;
@@ -480,14 +480,14 @@ section {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-bottom: 5px;
-  border-bottom: solid 2px #ffde59;
+  border-bottom: solid 2px #ffd600;
 }
 .menu_log_reg a {
   font-size: 14px;
   color: #ffffff;
 }
 .menu_log_reg a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 .menu_log_reg ul li {
   position: relative;
@@ -507,7 +507,7 @@ section {
   padding-right: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: solid 5px #ffde59;
+  border-bottom: solid 5px #ffd600;
 }
 .menu_nav ul li {
   position: relative;
@@ -541,7 +541,7 @@ section {
   transition: all 400ms 200ms ease;
 }
 .menu_nav ul li a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 
 /*********************************
@@ -576,7 +576,7 @@ section {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #ffde59;
+  background: #ffd600;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -596,7 +596,7 @@ section {
 }
 .form .message a,
 .form a {
-  color: #ffde59;
+  color: #ffd600;
   text-decoration: none;
 }
 .form .register-form {
@@ -698,7 +698,7 @@ section {
   color: white;
 }
 .disc_date {
-  color: #ffde59;
+  color: #ffd600;
   font-size: 20px;
 }
 
@@ -717,7 +717,7 @@ section {
   margin-bottom: 30px;
 }
 .artist_text span {
-  color: #ffde59;
+  color: #ffd600;
 }
 .artist_sig {
   margin-top: 51px;
@@ -796,7 +796,7 @@ section {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #ffde59;
+  background: #ffd600;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -998,7 +998,7 @@ section {
   right: 0;
   width: 139px;
   height: 50px;
-  background: #ffde59;
+  background: #ffd600;
   border: none;
   outline: none;
   cursor: pointer;

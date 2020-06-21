@@ -131,7 +131,7 @@ $(document).ready(function () {
       .get()
       .then(function (doc) {
         if (doc.data().grade == "admin") {
-          $(".home_content").append(
+          $(".blog").prepend(
             `<div class="add-icon-ctnr"><i class="fas fa-plus add-icon"><span class="tips">Ajouter un article</span></div>`
           );
           // $(".icons").css("display", "flex");
@@ -154,7 +154,7 @@ $(document).ready(function () {
   let addForm = false;
 
   // Create add-tour-form
-  $(".home_content").on("click", ".add-icon", function (e) {
+  $(".blog").on("click", ".add-icon", function (e) {
     if (addForm == false) {
       $(".container").append(
         `

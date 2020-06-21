@@ -49,7 +49,7 @@ $(document).ready(function () {
                     </div>
                     <div class="ml-auto">
                       <div class="show_shop trans_200">
-                        <a href="#">Acheter Tickets</a>
+                        <a href="https://www.fnacspectacles.com/place-spectacle/concerts/concert-7412769751009616465-lt.htm" target="_blank">Acheter Tickets</a>
                       </div>
                     </div>
                   </li>
@@ -77,7 +77,7 @@ $(document).ready(function () {
                     </div>
                     <div class="ml-auto">
                       <div class="show_shop trans_200">
-                        <a href="#">Acheter Tickets</a>
+                        <a href="https://www.fnacspectacles.com/place-spectacle/concerts/concert-7412769751009616465-lt.htm" target="_blank">Acheter Tickets</a>
                       </div>
                     </div>
                   </li>
@@ -108,7 +108,7 @@ $(document).ready(function () {
             </div>
             <div class="ml-auto">
               <div class="show_shop trans_200">
-                <a href="#">Acheter Tickets</a>
+                <a href="https://www.fnacspectacles.com/place-spectacle/concerts/concert-7412769751009616465-lt.htm" target="_blank">Acheter Tickets</a>
               </div>
             </div>
           </li>

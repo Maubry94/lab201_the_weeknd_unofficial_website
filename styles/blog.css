@@ -10,8 +10,8 @@
 3. Header
 4. Menu
 5. Connection
-6. Blog
-7. Sidebar
+6. Add blog
+7. blog
 8. Footer
 
 
@@ -126,7 +126,7 @@ a:link {
 }
 p a:active {
   position: relative;
-  color: #ffde59;
+  color: #ffd600;
 }
 p a:hover {
   color: #ffffff;
@@ -181,7 +181,7 @@ button:active {
   outline: none;
 }
 .form-control {
-  color: #ffde59;
+  color: #ffd600;
 }
 section {
   display: block;
@@ -360,7 +360,7 @@ section {
   color: #ffffff;
 }
 .log_reg ul li a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 .main_nav ul li:not(:last-child) {
   margin-right: 24px;
@@ -498,14 +498,14 @@ section {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-bottom: 5px;
-  border-bottom: solid 2px #ffde59;
+  border-bottom: solid 2px #ffd600;
 }
 .menu_log_reg a {
   font-size: 14px;
   color: #ffffff;
 }
 .menu_log_reg a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 .menu_log_reg ul li {
   position: relative;
@@ -525,7 +525,7 @@ section {
   padding-right: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: solid 5px #ffde59;
+  border-bottom: solid 5px #ffd600;
 }
 .menu_nav ul li {
   position: relative;
@@ -559,7 +559,7 @@ section {
   transition: all 400ms 200ms ease;
 }
 .menu_nav ul li a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 
 /*********************************
@@ -594,7 +594,7 @@ section {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #ffde59;
+  background: #ffd600;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -614,7 +614,7 @@ section {
 }
 .form .message a,
 .form a {
-  color: #ffde59;
+  color: #ffd600;
   text-decoration: none;
 }
 .form .register-form {
@@ -622,50 +622,11 @@ section {
 }
 
 /*********************************
-6. Home
+6. Add blog
 *********************************/
-
-.home {
-  width: 100%;
-  height: 384px;
-  padding-left: 51px;
-  padding-right: 52px;
-}
-.home_inner {
-  width: 100%;
-  height: 100%;
-}
-.home_container {
-  position: absolute;
-  left: 50%;
-  display: flex;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 89px;
-}
-.home_content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home_subtitle {
-  font-size: 18px;
-  line-height: 0.75;
-}
-.home_title {
-  font-size: 82px;
-  line-height: 0.75;
-  /* margin-top: 14px; */
-  white-space: nowrap;
-}
 .add-icon-ctnr {
-  position: relative;
-  left: 50px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
   font-size: 30px;
   cursor: pointer;
 }
@@ -685,14 +646,15 @@ section {
   position: absolute;
   z-index: 1;
   top: -5px;
-  left: 110%;
+  left: 52%;
 }
 
 .tips::after {
+  z-index: 10;
   content: "";
   position: absolute;
-  top: 50%;
-  right: 100%;
+  left: -11px;
+  bottom: 0;
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
@@ -704,7 +666,7 @@ section {
 }
 
 .add-icon:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 
 .add-article-form,
@@ -737,7 +699,7 @@ section {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #ffde59;
+  background: #ffd600;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -761,7 +723,7 @@ section {
 .edit-article-form .message a,
 .add-article-form a,
 .edit-article-form a {
-  color: #ffde59;
+  color: #ffd600;
   text-decoration: none;
 }
 .add-article-form p,
@@ -795,6 +757,8 @@ input[type="file"] {
 }
 
 .blog {
+  display: flex;
+  flex-direction: column;
   background: #000000;
   padding-top: 102px;
   padding-bottom: 26px;
@@ -810,7 +774,7 @@ input[type="file"] {
   left: -88px;
   width: 88px;
   height: 134px;
-  background: #ffde59;
+  background: #ffd600;
   z-index: 1;
 }
 .blog_post_audio .blog_post_date {
@@ -833,7 +797,7 @@ input[type="file"] {
   color: #ffffff;
 }
 .blog_post_title h2 a:hover {
-  color: #ffde59;
+  color: #ffd600;
 }
 .blog_post_info {
   margin-top: -2px;
@@ -843,12 +807,12 @@ input[type="file"] {
   margin-left: 9px;
   margin-right: 9px;
   font-size: 14px;
-  color: #ffde59;
+  color: #ffd600;
 }
 .blog_post_info ul li,
 .blog_post_info ul li a {
   font-size: 14px;
-  color: #ffde59;
+  color: #ffd600;
 }
 .blog_post_info ul li a:hover {
   color: #ffffff;
@@ -858,7 +822,7 @@ input[type="file"] {
 }
 .blog_post_text span,
 .blog_post_text a {
-  color: #ffde59;
+  color: #ffd600;
 }
 .load_more {
   margin-top: 65px;
@@ -866,7 +830,7 @@ input[type="file"] {
 .button {
   width: 161px;
   height: 46px;
-  background: #ffde59;
+  background: #ffd600;
   text-align: center;
 }
 .button a {
@@ -948,7 +912,7 @@ input[type="file"] {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #ffde59;
+  background: #ffd600;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -1112,7 +1076,7 @@ input[type="file"] {
   right: 0;
   width: 139px;
   height: 50px;
-  background: #ffde59;
+  background: #ffd600;
   border: none;
   outline: none;
   cursor: pointer;
