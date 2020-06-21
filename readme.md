@@ -2,8 +2,8 @@
 
 ## Liens
 
-Le [site](https://matthieu-aubry.com/lab201/){:target="\_blank"} en ligne.\
-Le [dépôt](https://github.com/Maubry94/lab201-the-weeknd-unofficial-website){:target="\_blank"}.
+Le [site](https://matthieu-aubry.com/lab201/) en ligne.\
+Le [dépôt](https://github.com/Maubry94/lab201-the-weeknd-unofficial-website).
 
 ## Compte
 
